@@ -1,0 +1,28 @@
+# Configuration file
+
+# Directory where data is located
+data_dir: ../
+
+# Features to use (e.g.,'UNI', 'transpath', 'moco', 'histossl')
+features: UNI
+
+# Training parameters
+batch_size: 8
+nb_epochs: 150
+learning_rate: 0.001
+# number of cross val to repeat
+repeat: 5
+
+# Upsampling option (set to True to upsample x3 the positives)
+upsample: True
+
+# Model configuration (model_name: Attention or Chowder)
+model_name: Chowder
+dropout_rate: 0.4
+dense_size_1: [256, 128]
+dense_size_2: [16, 8]
+activation: tanh
+kernel_regularizer_rate: 0.0005
+
+# R value (only for Chowder)
+R: 10
